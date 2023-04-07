@@ -1,0 +1,36 @@
+{
+  "name": "nchem-api",
+  "version": "1.0.0",
+  "description": "NCHEM-Api mentor ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bsc-40-20/NCHEM-Api.git"
+  },
+  "keywords": [
+    "Restfull",
+    "Api",
+    "for",
+    "NCHEM",
+    "mentor",
+    "powered",
+    "by",
+    "MYSQL"
+  ],
+  "author": "ashrafchitambaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bsc-40-20/NCHEM-Api/issues"
+  },
+  "homepage": "https://github.com/Bsc-40-20/NCHEM-Api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.22"
+  }
+}
