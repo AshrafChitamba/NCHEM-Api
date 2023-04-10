@@ -6,6 +6,9 @@ const Post = require("./src/Posts/Posts.model");
 // creating an instance of express
 const app = express();
 
+// dbConnection
+const dbConnection = require("./src/Utils/mysql.connector");
+
 // getting a post
 app.get("/", (request, response) => {
   return response.json(request.headers);
@@ -20,4 +23,11 @@ app.post("/api/v1/post", (request, response) => {
 //
 
 // creating a server
-app.listen(3000, () => console.log("Server Running"));
+app.listen(3000, () => {
+  console.log("Server Running!!!");
+  dbConnection.connect((error) => {
+    if (error) throw error.message;
+
+    console.log("Connected to the Database!!!");
+  });
+});
