@@ -7,4 +7,4 @@ const Post = {
     summary: ''
 }
 
-module.exports = Post
+export default Post

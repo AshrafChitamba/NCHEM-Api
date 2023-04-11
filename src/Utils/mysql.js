@@ -1,9 +1,7 @@
-const mysql = require("mysql2");
-
-const dotenv = require("dotenv");
+import mysql from 'mysql2'
+import dotenv from 'dotenv'
 
 dotenv.config();
-
 const { DATABASE_PASSWORD, DATABASE_USER, DATABASE_HOST, DATABASE_PORT, DATABASE_NAME } =
   process.env;
 
@@ -17,4 +15,4 @@ const configOptions = {
 
 const dbConnection = mysql.createConnection(configOptions);
 
-module.exports = dbConnection;
+export default dbConnection;
